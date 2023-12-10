@@ -1,0 +1,227 @@
+:root{
+    --main-color: #009688;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+}
+.game{
+    background-color: #eee;
+    min-height: 100vh;
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+}
+.name button{
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container h2 {
+    margin: 15px auto;
+    color: var(--main-color)
+}
+.container select {
+    width: fit-content;
+    margin: 0 auto 70px;
+    padding: 10px 40px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+.message{
+    width: 95%;
+    background-color: white;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+}
+.message span {
+    font-weight: bold;
+    color: #009688;
+}
+.message span::before{
+    content: "[ ";
+}
+.message span::after{
+    content: " ]";
+}
+.start{
+    width: 95%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.the-word{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+}
+.input{
+    margin: 10px auto;
+    width: 95%;
+    display: block;
+    padding: 15px;
+    border: 3px solid var(--main-color);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    caret-color: var(--main-color);
+}
+.input:focus{
+    outline: none;
+}
+.upcoming-words{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upcoming-words div{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.control{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.control span{
+    font-weight: bold;
+    color: #009688;
+}
+.finish{
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    margin: 10px;
+    color: rgb(239, 83, 36);
+}
+@media (max-width: 767px) {
+    .name button {
+        margin-left: 10px;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .name h1 {
+        font-size: 15px;
+        margin-left: 65px;
+    }
+}
+@media (max-width: 767px) {
+    .container h2 {
+        font-size: 15px;
+        margin: 5px auto;
+    }
+}
+@media (max-width: 767px) {
+    .container select{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media (max-width: 767px) {
+    .message {
+        padding: 5px;
+        margin-top: 40px;
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
+@media (max-width: 767px) {
+    .start {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 767px) {
+    .the-word {
+        font-size: 40px;
+        }
+}
+@media (max-width: 767px) {
+    .input {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .upcoming-words {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .upcoming-words div {
+        padding: 6px;
+    }
+}
+@media (max-width: 767px) {
+    .control {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .finish {
+        font-size: 30px;
+    }
+}
+
